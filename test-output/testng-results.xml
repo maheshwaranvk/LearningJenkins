@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21072" started-at="2021-02-21T18:59:58 IST" finished-at="2021-02-21T19:00:19 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21072" started-at="2021-02-21T18:59:58 IST" finished-at="2021-02-21T19:00:19 IST">
+      <class name="testcases.EditLead">
+        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:testcases.EditLead@481a15ff]" name="launchApplication" is-config="true" duration-ms="2142" started-at="2021-02-21T19:00:07 IST" finished-at="2021-02-21T19:00:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[english]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="runEditLead()[pri:0, instance:testcases.EditLead@481a15ff]" name="runEditLead" duration-ms="9174" started-at="2021-02-21T19:00:09 IST" finished-at="2021-02-21T19:00:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runEditLead -->
+      </class> <!-- testcases.EditLead -->
+      <class name="testcases.CreateLead">
+        <test-method status="PASS" signature="getExcel()[pri:0, instance:testcases.CreateLead@646007f4]" name="getExcel" is-config="true" duration-ms="7" started-at="2021-02-21T18:59:58 IST" finished-at="2021-02-21T18:59:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExcel -->
+        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:testcases.CreateLead@646007f4]" name="launchApplication" is-config="true" duration-ms="3306" started-at="2021-02-21T18:59:58 IST" finished-at="2021-02-21T19:00:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[english]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="runCreateLead(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.CreateLead@646007f4]" name="runCreateLead" duration-ms="5960" started-at="2021-02-21T19:00:01 IST" data-provider="fetchdata" finished-at="2021-02-21T19:00:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wirpo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gunasekaran]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreateLead -->
+      </class> <!-- testcases.CreateLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
