@@ -1,8 +1,16 @@
 package pages;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.model.Media;
 
 import base.ProjectSpecificMethods;
 
@@ -33,5 +41,10 @@ public class CreateLeadPage extends ProjectSpecificMethods {
 		driver.findElementByName(prop.getProperty("CreateLeadPage.SubmitButton.Name")).click();
 		return new ViewLeadPage(driver,prop);
 
+	}
+	
+	public CreateLeadPage addScreenshot() throws IOException {
+		addScreenshot("Create Lead Page Loaded Successfully");
+		return this;
 	}
 }

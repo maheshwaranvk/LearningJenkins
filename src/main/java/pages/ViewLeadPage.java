@@ -1,8 +1,16 @@
 package pages;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.model.Media;
 
 import base.ProjectSpecificMethods;
 
@@ -36,4 +44,9 @@ public class ViewLeadPage extends ProjectSpecificMethods{
 		leadID = text.replaceAll("\\D", "");
 		System.out.println(leadID);
 			}
+	
+	public ViewLeadPage addScreenshot() throws IOException {
+		addScreenshot("View Lead Page Loaded Successfully");
+		return this;
+	}
 }

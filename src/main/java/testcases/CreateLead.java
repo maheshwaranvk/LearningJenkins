@@ -1,5 +1,7 @@
 package testcases;
 
+import java.io.IOException;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,19 +20,24 @@ public class CreateLead extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider="fetchdata")
-	public void runCreateLead(String cName, String fName, String lName) {
+	public void runCreateLead(String cName, String fName, String lName) throws IOException {
 		new LoginPage(driver,prop)
 		.enterUserName()
 		.enterPassword()
+		.addScreenshot()
 		.clickLogin()
+		.addScreenshot()
 		.clickCrmsfaLink()
 		.clickLeads()
 		.clickCreateLeads()
 		.enterCompName(cName)
 		.enterFirstName(fName)
 		.enterLastName(lName)
+		.addScreenshot()
 		.clickCreateLeadButton()
-		.viewPage().getLeadID();
+		.viewPage().
+		addScreenshot().
+		getLeadID();
 
 	}
 }
